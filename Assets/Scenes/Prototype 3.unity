@@ -605,8 +605,10 @@ MonoBehaviour:
   gravityModifier: 1
   isOnGround: 1
   gameOver: 0
-  explosionParticle: {fileID: 0}
-  dirtParticle: {fileID: 0}
+  explosionParticle: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
+  dirtParticle: {fileID: 1438565936, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
+  JumpSound: {fileID: 8300000, guid: 08ab7053d586c458db3774d33c141a4b, type: 3}
+  crashSound: {fileID: 0}
 --- !u!65 &1810541519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -804,6 +806,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1571217315367719269, guid: ce750f51cd53c433188bfec19ac551e6, type: 3}
+      propertyPath: m_Size.x
+      value: 2.9178889
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571217315367719269, guid: ce750f51cd53c433188bfec19ac551e6, type: 3}
+      propertyPath: m_Center.x
+      value: -0.12639225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571217315367719269, guid: ce750f51cd53c433188bfec19ac551e6, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6541313618082172008, guid: ce750f51cd53c433188bfec19ac551e6, type: 3}
       propertyPath: m_Name
       value: Obstacle
