@@ -65,6 +65,8 @@ public class PlayerControllerX : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * 10 ,ForceMode.Impulse);
         }
+    
+
 
     }
 

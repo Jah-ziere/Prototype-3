@@ -7,6 +7,8 @@ public class MoveLeft : MonoBehaviour
     private float speed = 5;
     private PlayerController playerControllerScript; 
     private float leftBound = -15;
+    private float dashMultiplier = 2f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +19,10 @@ public class MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerControllerScript.gameOver == false)
+        if (!playerControllerScript.gameOver)
         {
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
+            float currentSpeed = playerControllerScript.isDashing ? speed * dashMultiplier : speed;
+            transform.Translate(Vector3.left * Time.deltaTime * currentSpeed);
         }
 // destroys out of bounds obstacles
         if (transform.position.x < leftBound && !gameObject.CompareTag("Obstacle"))
